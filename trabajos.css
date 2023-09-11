@@ -1,0 +1,103 @@
+
+
+#trabajos {
+    color: black;
+    margin: 11%;
+    margin-top: 2%;
+}
+
+#trabajos h1 {
+    font-weight: 400;
+
+}
+
+.gallery {
+    text-align: center; 
+    display: grid;
+
+}
+
+.row img {
+    width: 535px;
+    padding: 7px;
+}
+
+.row2 img {
+    width: 353px;
+    padding: 7px;
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    .row img {
+        width: 353px;
+    }
+    .row2 img{
+        width: 353px;
+    }
+}
+
+
+/*Extra small devices*/
+@media only screen and (max-width: 700px) {
+
+    #trabajos {
+        
+        margin: 10%;
+       
+    }
+    .gallery {
+        text-align: center;
+        margin-left: -2%;
+    }
+
+
+
+    .gallery .row {
+        display: block;
+
+    }
+
+    .row img {
+        width: 300px;
+        
+    }
+    .row2 img{
+        width: 300px;
+    }
+}
+
+/*@media screen and (min-width: 1800px) {
+
+    #trabajos {
+        color: black;
+        margin: 26%;
+        margin-top: 2%;
+    }
+    .gallery .row {
+        justify-content: center;
+        padding: 7px;
+        text-align: center;
+
+    
+    }
+    
+    .row img {
+        width: 700px;
+        padding: 7px;
+        
+        
+    }
+    
+    .row2 img {
+        width: 380px;
+        padding: 7px;
+        position: static;
+         
+    }
+}
+
+

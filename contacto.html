@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - BioForestVG</title>
+    <meta name="description" content="Contáctenos para obtener más información sobre nuestros servicios de poda, tala y desbroce en Jaca, Huesca, Zaragoza, Lleida y Pamplona. 
+    Encuentre nuestros detalles de contacto y envíenos un mensaje." />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <script src="js/language-switcher_contact.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/bioforest.js"></script>
+</head>
+
+<body>
+    <div id="navbar" class="navbar">
+        <div class="logo">
+            <img src="images/logo.png">
+            <p><b>BIOFORESTVG</b></p>
+            <button onclick="switchLanguage('fr')">Switch to france</button>
+        </div>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="navbar-right" class="navbar">
+            <a href="index.html">INICIO</a>
+            <a href="about.html">¿QUIENES SOMOS?</a>
+            <a href="nuestrostrabajos.html">NUESTROS TRABAJOS</a>
+            <a href="contacto.html" class="active">CONTACTO</a>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu" onclick="mobileMenu()">
+            <a href="index.html">INICIO</a>
+            <a href="about.html">¿QUIENES SOMOS?</a>
+            <a href="nuestrostrabajos.html">NUESTROS TRABAJOS</a>
+            <a href="contacto.html">CONTACTO</a>
+        </div>
+
+    </div>
+    <div id="hero">
+        <div class="text-container">
+            <h1>BioForestVG</h1>
+            <p>PODAS, TALAS Y DESBROCES</p>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="info">
+            <p><i>Informacion de contacto:</i></p>
+            <p>Telefono:<a href="tel:647 007 305">647 007 305</a></p>
+            <p>Correo electronico:<a href="mailto:bioforestvg@gmail.com">bioforestvg@gmail.com</a></p>
+
+            <div></div>
+        </div>
+
+
+        <form method="post" action="send-email.php">
+
+
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Dirección de correo electrónico*</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <br>
+
+            <input type="submit" value="Enviar formulario" onclick="sendEmail(event)">
+
+
+
+        </form>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11752.733133562371!2d-0.5583933357764154!3d42.572632090726785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5780ec767847ed%3A0x196f61f8bc9a1be2!2s22700%20Jaca%2C%20Provincia%20Huesca%2C%20Spania!5e0!3m2!1sro!2sro!4v1690895112924!5m2!1sro!2sro"
+                class="map-iframe" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; 2023 BioForestVG
+    </footer>
+
+</body>
+
+</html>

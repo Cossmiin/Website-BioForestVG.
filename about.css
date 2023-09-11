@@ -1,0 +1,168 @@
+
+
+#about {
+    color: black;
+    margin: 10%;
+    margin-top: 5%;
+}
+
+#about h1 {
+    font-weight: 400;
+}
+
+
+.about {
+
+    padding-top: 50px;
+
+}
+
+.about img {
+    width: 400px;
+    padding: 10px;
+
+
+}
+
+.about-container {
+    display: flex;
+    text-align: left;
+
+}
+
+section {
+    padding-left: 20px;
+    margin-top: 80px;
+}
+
+.about-container ul {
+    list-style-type: inherit;
+    padding-left: 15px;
+}
+
+
+#columns {
+    display: flex;
+    text-align: justify;
+    flex: 1;
+
+
+}
+
+.column1 {
+    flex: 1;
+    margin-right: 5%;
+
+}
+
+.column2 {
+    flex: 1;
+    padding: 10px;
+
+}
+
+.column1,
+.column2 p {
+    line-height: 1.8;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    #about img {
+        width: 400px;
+        text-align: center;
+        margin: auto;
+    }
+
+    #about-container {
+        display: inline-block;
+    }
+    #about h1{
+        text-align: center;
+    }
+
+    .section {
+
+        margin-top: 80px;
+    }
+
+    .about-container ul {
+        list-style-type: square;
+        padding-left: 15px;
+    }
+    #columns {
+        display: block;
+        text-align: justify;
+        flex: 1;
+    }
+    .column1 {
+        flex: 1;
+        margin-right: 0%;
+
+    }
+    .column2 {
+        flex: 1;
+        padding: 10px;
+
+    }
+    .column1,
+    .column2 p {
+        line-height: 1.8;
+    }
+
+}
+
+/*Extra small devices*/
+
+
+@media only screen and (max-width: 780px) {
+    #about img {
+        width: 300px;
+        margin-left: -3%;
+
+
+
+    }
+
+    .about-container {
+        display: block;
+    }
+
+    section {
+        margin-top: 80px;
+    }
+
+    .about-container ul {
+        list-style-type: inherit;
+        padding-left: 15px;
+    }
+
+
+    #columns {
+        display: block;
+        text-align: justify;
+        flex: 1;
+
+
+    }
+
+    .column1 {
+        flex: 1;
+        margin-right: 0%;
+
+    }
+
+    .column2 {
+        flex: 1;
+        padding: 3px;
+
+    }
+
+    .column1,
+    .column2 p {
+        line-height: 1.5;
+    }
+
+}

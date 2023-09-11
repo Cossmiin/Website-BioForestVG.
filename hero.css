@@ -1,0 +1,482 @@
+html,
+body {
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+}
+#hero {
+    background-image: url('/images/trees-ga86810b88_1280.jpg');
+    opacity: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -15%;
+    top: 0;
+    height: 400px;
+}
+#navbar {
+    width: 98%;
+    display: flex;
+    position: sticky;
+    top: 1%;
+    z-index: 99;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100px;
+    padding-top: 1px;
+}
+
+.logo p {
+    font-size: 25px;
+    padding-left: 20px;
+
+}
+
+#navbar.scrolled .logo p {
+    color: #6f8a5d;
+}
+#navbar button {
+    width: 100px;
+    height: 50px;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    margin-left: 7%;
+    background-color: transparent;
+}
+
+#navbar button:hover {
+    background-color: white;
+    color: #6f8a5d;
+    cursor: pointer;
+    height: 50px;
+}
+
+#navbar.scrolled button {
+    color: #6f8a5d;
+}
+
+#navbar.scrolled button:hover {
+    background-color: #6f8a5d;
+    color: white;
+}
+#navbar-right {
+    float: right;
+    margin-top: 2.5%;
+    margin-left: 20%;
+}
+
+#navbar.scrolled #navbar-right a {
+    color: #6f8a5d;
+}
+
+#navbar-right a:hover {
+    background-color: #6f8a5d;
+    color: white;
+    border-radius: 30px;
+    
+}
+
+#navbar a {
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+    text-decoration: none;
+}
+#navbar a.active {
+    background-color: white;
+    color: #6f8a5d;
+    border-radius: 30px;
+}
+#navbar.scrolled a.active{
+    background-color: #6f8a5d;
+    color: white;
+    border-radius: 30px;
+}
+#navbar-right a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#navbar.scrolled #navbar-right a.active {
+    color: white; 
+}
+
+/* Hover styles for the right-aligned links when not scrolled */
+#navbar-right a:hover {
+    background-color: white;
+    color: #6f8a5d;
+    border-radius: 30px;
+}
+.mobile-menu{
+    display: none;
+}
+
+#navbar a:hover {
+    background-color: white;
+    color: #6f8a5d;
+    border-radius: 30px;
+}
+
+#navbar.scrolled #navbar-right a:hover {
+    background-color: #6f8a5d;
+    color: white;
+}
+
+@media screen and (max-width: 1400px) {
+    #navbar a {
+        color: white;
+        font-size: 15px;
+        padding: 7px;
+        text-decoration: none;
+    }
+
+    #navbar-right {
+        float: right;
+        margin-top: 2.5%;
+        margin-left: 17%;
+    }
+}
+
+.text-container {
+    text-align: center;
+    margin: 15%;
+}
+
+.text-container h1 {
+    font-weight: 500px;
+    font-size: 40px;
+
+}
+
+footer {
+    text-align: center;
+    background-color: #6f8a5d;
+    padding: 50px 0;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+}
+
+/*normal devices*/
+@media screen and (max-width: 1100px) {
+    #hero {
+        background-image: url('/images/trees-ga86810b88_1280.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        height: 400px;
+    }
+
+    #navbar {
+        width: 100%;
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin: auto;
+        justify-content: center;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    #navbar .burger div {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    #navbar .burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        z-index: 1;
+        width: 100%; /* Set the width to 100% */
+    }
+    
+    .mobile-menu a {
+        display: block;
+        padding: 3px;
+        line-height: 2;
+        color: #6f8a5d;
+        background-color: white;
+    }
+    
+    .mobile-menu.show {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: white;
+        padding: 0px;
+        z-index: 1;
+        width: 100%; /* Set the width to 100% */
+    }
+    
+    #navbar.scrolled .burger div {
+        background-color: #6f8a5d;
+    }
+
+    #navbar.scrolled {
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 0%;
+        cursor: pointer;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .logo p {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    #navbar.scrolled .logo p {
+        color: #6f8a5d;
+    }
+
+    #navbar-right {
+        display: none;
+    }
+
+    #navbar.scrolled #navbar-right a {
+        color: #6f8a5d;
+    }
+
+    #navbar-right a:hover {
+        background-color: #6f8a5d;
+        color: white;
+        border-radius: 30px;
+    }
+
+    #navbar a {
+        color: #6f8a5d;
+        font-size: 17px;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+    }
+
+    #navbar a:hover {
+        background-color: #6f8a5d;
+        color: white;
+        border-radius: 30px;
+    }
+
+    #navbar.scrolled #navbar-right a:hover {
+        background-color: #6f8a5d;
+        color: white;
+    }
+
+    .text-container {
+        text-align: center;
+        padding-top: 70px;
+
+    }
+
+    .text-container h1 {
+        font-weight: 500;
+        font-size: 25px;
+    }
+}
+
+/*Extra small devices*/
+@media only screen and (max-width: 700px) {
+    #hero {
+        height: 250px;
+        margin-top: -20%;
+
+    }
+
+    #navbar {
+        position: sticky;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        justify-content: center;
+
+    }
+
+    #navbar .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3.5px 0;
+    }
+
+
+
+    .mobile-menu a {
+        display: block;
+        padding: 1px;
+        line-height: 1;
+        color: #6f8a5d;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .mobile-menu.show {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 3px;
+        background-color: white;
+        padding: 3px;
+        z-index: 1;
+        width: 350px;
+        
+    }
+
+    #navbar.scrolled .burger div {
+        background-color: #6f8a5d;
+    }
+
+    #navbar.scrolled {
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 0%;
+        cursor: pointer;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .logo p {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    #navbar button {
+        width: 70px;
+        height: 50px;
+        color: white;
+        border-style: none;
+        border-radius: 20px;
+        margin-left: 2%;
+        background-color: rgb(0, 0, 0, 0.1);
+    }
+
+    #navbar.scrolled .logo p {
+        color: #6f8a5d;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: sticky;
+        top: 60px;
+        right: 10px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        z-index: 1;
+        width: 100%; /* Set the width to 100% */
+    }
+    
+    .mobile-menu a {
+        display: block;
+        padding: 3px;
+        line-height: 2;
+        color: #6f8a5d;
+        background-color: white;
+    }
+    
+    .mobile-menu.show {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: white;
+        padding: 0px;
+        z-index: 1;
+        width: 100%; /* Set the width to 100% */
+    }
+
+
+
+    .text-container {
+        text-align: center;
+        padding-top: 40px;
+
+    }
+
+    .text-container h1 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+}
+
+/*Extra large devices*/
+@media screen and (min-width: 1800px) {
+    #hero {
+        height: 600px;
+    }
+    #navbar a {
+        color: white;
+        font-size: 17px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    #navbar-right {
+        float: right;
+        margin-top: 1.5%;
+        margin-left: 40%;
+    }
+}

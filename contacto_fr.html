@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BioForestVG</title>
+    <meta name="description" content="Contactez-nous pour obtenir plus d'informations sur nos services d'élagage, d'abattage et de débroussaillage à Oloron Sainte-Marie, Pau, Tarbes, Mont de Marsan et Bayonne. 
+        Retrouvez nos coordonnées et envoyez-nous un message." />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <script src="js/language-switcher_contact.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/bioforest.js"></script>
+</head>
+
+<body>
+    <div id="navbar" class="navbar">
+        <div class="logo">
+            <img src="images/logo.png">
+            <p><b>BIOFORESTVG</b></p>
+            <button onclick="switchLanguage('es')">Switch to espagnol</button>
+        </div>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="navbar-right" class="navbar">
+            <a href="index.html">DEBUT</a>
+            <a href="about.html">¿QUI NOUS SOMMES?</a>
+            <a href="nuestrostrabajos.html">NOS TRAVAUX</a>
+            <a href="contacto.html">CONTACT</a>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu" onclick="mobileMenu()">
+            <a href="index.html">DEBUT</a>
+            <a href="about.html">¿QUI NOUS SOMMES?</a>
+            <a href="nuestrostrabajos.html">NOS TRAVAUX</a>
+            <a href="contacto.html">CONTACT</a>
+        </div>
+
+    </div>
+    <div id="hero">
+        <div class="text-container">
+            <h1>BioForestVG</h1>
+            <p>ÉLAGAGES, ABATTAGES ET DÉBROUSSAILLAGES</p>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="info">
+            <p><i>Informations de contact:</i></p>
+            <p>Téléphone:<a href="tel:647 007 305">647 007 305</a></p>
+            <p>Correo electronico:<a href="mailto:bioforestvg@gmail.com">bioforestvg@gmail.com</a></p>
+
+            <div></div>
+        </div>
+
+
+
+        <form method="post">
+
+
+            <label for="name">Nom*</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Adresse e-mail*</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Message*</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <br>
+
+            <input type="submit" value="Envoyer le Formulaire" onclick="sendEmail(event)">
+
+
+
+        </form>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93119.46767416506!2d-0.5953705499999999!3d43.16787335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd57aaacee6c8db9%3A0x406651748139610!2s64400%20Oloron-Sainte-Marie%2C%20Fran%C5%A3a!5e0!3m2!1sro!2sro!4v1693036368611!5m2!1sro!2sro"
+                class="map-iframe" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; 2023 BioForestVG
+    </footer>
+
+</body>
+
+</html>

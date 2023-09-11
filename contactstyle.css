@@ -1,0 +1,254 @@
+
+#contact {
+    color: black;
+    margin: 10%;
+    margin-top: 5%;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.info a {
+    padding-left: 20px;
+    color: #6f8a5d;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.info div {
+    height: 1px;
+    background-color: rgb(0, 0, 0, 0.2);
+    width: 1000px;
+    margin: auto;
+    margin-top: 3%;
+}
+
+form {
+    margin-top: 3%;
+}
+form label{
+    display: block;
+    margin-top: 2%;
+}
+input{
+    width: 400px;
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+}
+
+
+input:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+input:focus {
+    border-color: #6f8a5d;
+    outline: none;
+    box-shadow: 0 0 5px #6f8a5d;
+}
+textarea {
+    width: 400px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+
+}
+textarea:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+textarea:focus {
+    border-color: #6f8a5d;
+    outline: none;
+    box-shadow: 0 0 5px #6f8a5d;
+}
+
+input[type=submit] {
+    background-color: #6f8a5d;
+    color: white;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    margin-top: 2%;
+    text-align: center;
+    
+}
+
+input[type=submit]:hover {
+    background-color: #98a68f;
+    color: white;
+}
+
+.map {
+    text-align: center;
+    margin-top: 5%;
+}
+.map-iframe {
+    width: 1000px;
+    height: 350px;
+    border: 0;
+}
+
+@media screen and (max-width: 1100px) {
+
+    
+
+    #contact {
+        color: black;
+        margin: 10%;
+        margin-top: 5%;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .info div {
+        height: 1px;
+        background-color: rgb(0, 0, 0, 0.2);
+        width: 400px;
+        margin: auto;
+        margin-top: 3%;
+    }
+    input{
+        width: 300px;
+        height: 25px;
+    }
+
+
+
+    textarea {
+        width: 300px;
+        height: 100px;
+    }
+
+    .map {
+        text-align: center;
+        width: 200px;
+        
+        align-items: center;
+      
+       
+    }
+    .map-iframe {
+        width: 200%;
+        height: 250px;
+        
+        
+      }
+  
+
+
+}
+
+
+/*@media screen and (min-width: 1800px) {
+    .form .name input {
+        margin-left: 28.8%
+    }
+
+    .form .email input {
+        margin-left: 20%;
+
+    }
+
+    .form .text textarea {
+        width: 400px;
+        height: 100px;
+        margin-left: 32.4%;
+        margin-top: 0.1%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.2s;
+
+    }
+}
+
+
+/*Extra small devices*/
+@media only screen and (max-width: 700px) {
+    #contact {
+        color: black;
+        margin: 10%;
+        margin-top: 5%;
+    }
+    
+    p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .info a {
+        padding-left: 20px;
+        color: #6f8a5d;
+        text-decoration: none;
+    }
+    
+    .info a:hover {
+        text-decoration: underline;
+    }
+    
+    .info div {
+        width: 300px;  
+    }
+    
+    .form {
+        margin-top: 15%;
+    }
+    
+    .form input {
+        width: 300px;
+        height: 25px;
+        margin-left: 10%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.2s;
+    }
+    
+    .form input:hover {
+        border-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .form input:focus {
+        border-color: #6f8a5d;
+        outline: none;
+        box-shadow: 0 0 5px #6f8a5d;
+    }
+    
+    .form .name input {
+        margin-left: 2%;
+    }
+    
+    .form .email input {
+        margin-left: 2%;
+        margin-top: 5px;
+    
+    }
+    
+    .form .text textarea {
+        width: 300px;
+        height: 100px;
+        margin-left: 2%;
+        margin-top: -2.5%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.2s;
+    
+    }
+    
+    
+    .map {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .map-iframe {
+        width: 300px;
+        height: 250px;
+        border: 0;
+    }
+}
